@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Список дел</h1>
+  <div class="app-container">
+    <h1 class="app-title">Список дел</h1>
 
     <div class="tasks">
       <TaskItem
@@ -30,9 +30,27 @@ const tasks: Task[] = [
 </script>
 
 <style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
 .tasks {
   display: flex;
-  gap: 16px;
   flex-direction: column;
+  gap: 16px;
 }
 </style>
